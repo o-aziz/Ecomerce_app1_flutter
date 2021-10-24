@@ -1,3 +1,4 @@
+import 'package:ecomerce_store1/helpers/size_config.dart';
 import 'package:flutter/material.dart';
 
 class CategoriesWidget extends StatelessWidget {
@@ -18,9 +19,9 @@ class CategoriesWidget extends StatelessWidget {
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(top: 5),
-              height: 2,
-              width: 50,
+              margin: EdgeInsets.only(top: 0.62 * SizeConfig.heightMultiplier),
+              height: 0.24 * SizeConfig.heightMultiplier,
+              width: 12.75 * SizeConfig.widthMultiplier,
               color: const Color(0xffA7AAB7),
             )
           ],

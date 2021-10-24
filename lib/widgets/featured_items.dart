@@ -1,3 +1,4 @@
+import 'package:ecomerce_store1/helpers/size_config.dart';
 import 'package:ecomerce_store1/screens/screens.dart';
 import 'package:flutter/material.dart';
 
@@ -7,8 +8,8 @@ class FeaturedItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 20),
-      height: 200,
+      margin: EdgeInsets.only(left: 5.10 * SizeConfig.widthMultiplier),
+      height: 24.93 * SizeConfig.heightMultiplier,
       width: double.infinity,
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
@@ -41,34 +42,40 @@ class FeaturedItems extends StatelessWidget {
                     ItemDetails(imgUrl: imgUrl, itemName: dressName)));
       },
       child: Container(
-        margin: const EdgeInsets.only(
-          left: 10,
-        ),
-        height: 200,
-        width: 130,
+        margin: EdgeInsets.only(left: 2.55 * SizeConfig.widthMultiplier),
+        height: 24.93 * SizeConfig.heightMultiplier,
+        width: 33.16 * SizeConfig.widthMultiplier,
         alignment: Alignment.center,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              decoration:
-                  BoxDecoration(borderRadius: BorderRadius.circular(12)),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(
+                      1.49 * SizeConfig.heightMultiplier)),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(12),
+                borderRadius:
+                    BorderRadius.circular(1.49 * SizeConfig.heightMultiplier),
                 child: Image.asset(
                   imgUrl,
-                  height: 160,
+                  height: 19.95 * SizeConfig.heightMultiplier,
                 ),
               ),
             ),
-            const SizedBox(height: 5),
+            SizedBox(height: 0.62 * SizeConfig.heightMultiplier),
             Text(
               dressName,
-              style: Theme.of(context).textTheme.bodyText1,
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyText1!
+                  .copyWith(fontSize: 2 * SizeConfig.heightMultiplier),
             ),
             Text(
               dressPrice,
-              style: Theme.of(context).textTheme.caption,
+              style: Theme.of(context)
+                  .textTheme
+                  .caption!
+                  .copyWith(fontSize: 1.5 * SizeConfig.heightMultiplier),
             ),
           ],
         ),

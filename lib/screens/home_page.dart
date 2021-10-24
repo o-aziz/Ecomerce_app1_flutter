@@ -1,3 +1,4 @@
+import 'package:ecomerce_store1/helpers/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:ecomerce_store1/widgets/widgets.dart';
 
@@ -16,36 +17,36 @@ class HomePage extends StatelessWidget {
             const Spacer(),
             Container(
               alignment: Alignment.bottomCenter,
-              height: 600,
-              decoration: const BoxDecoration(
+              height: 74.8 * SizeConfig.heightMultiplier,
+              decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(40),
-                  topRight: Radius.circular(40),
+                  topLeft: Radius.circular(4.98 * SizeConfig.heightMultiplier),
+                  topRight: Radius.circular(4.98 * SizeConfig.heightMultiplier),
                 ),
               ),
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 30,
-                      vertical: 40,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 7.69 * SizeConfig.widthMultiplier,
+                      vertical: 4.98 * SizeConfig.heightMultiplier,
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'Featured',
                           style: TextStyle(
-                            color: Color(0xff273046),
-                            fontSize: 30,
+                            color: const Color(0xff273046),
+                            fontSize: 3.74 * SizeConfig.heightMultiplier,
                           ),
                         ),
                         Text(
                           'View all',
                           style: TextStyle(
-                            color: Color(0xffD8D9DE),
-                            fontSize: 15,
+                            color: const Color(0xffD8D9DE),
+                            fontSize: 1.87 * SizeConfig.heightMultiplier,
                           ),
                         ),
                       ],
@@ -53,25 +54,25 @@ class HomePage extends StatelessWidget {
                   ),
                   const FeaturedItems(),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 30,
-                      vertical: 30,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 7.65 * SizeConfig.widthMultiplier,
+                      vertical: 3.74 * SizeConfig.heightMultiplier,
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'New arrivals',
                           style: TextStyle(
-                            color: Color(0xff273046),
-                            fontSize: 30,
+                            color: const Color(0xff273046),
+                            fontSize: 3.74 * SizeConfig.heightMultiplier,
                           ),
                         ),
                         Text(
                           'View all',
                           style: TextStyle(
-                            color: Color(0xffD8D9DE),
-                            fontSize: 15,
+                            color: const Color(0xffD8D9DE),
+                            fontSize: 1.87 * SizeConfig.heightMultiplier,
                           ),
                         ),
                       ],

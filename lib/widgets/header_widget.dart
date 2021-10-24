@@ -1,3 +1,4 @@
+import 'package:ecomerce_store1/helpers/size_config.dart';
 import 'package:flutter/material.dart';
 
 class HeaderWidget extends StatelessWidget {
@@ -6,16 +7,18 @@ class HeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 30),
+      padding:
+          EdgeInsets.symmetric(vertical: 3.74 * SizeConfig.heightMultiplier),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
-            height: 50,
-            width: 250,
+            height: 6.23 * SizeConfig.heightMultiplier,
+            width: 63.7 * SizeConfig.widthMultiplier,
             decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(50),
+                borderRadius:
+                    BorderRadius.circular(6.23 * SizeConfig.heightMultiplier),
                 boxShadow: const [
                   BoxShadow(
                       color: Colors.black54,
@@ -23,14 +26,14 @@ class HeaderWidget extends StatelessWidget {
                       blurRadius: 4)
                 ]),
             child: Row(
-              children: const [
-                SizedBox(width: 10),
-                Icon(
+              children: [
+                SizedBox(width: 2.55 * SizeConfig.widthMultiplier),
+                const Icon(
                   Icons.search,
                   color: Color(0xffCDD4DD),
                 ),
-                SizedBox(width: 6),
-                Text(
+                SizedBox(width: 1.53 * SizeConfig.widthMultiplier),
+                const Text(
                   'Search',
                   style: TextStyle(color: Color(0xffCDD4DD)),
                 ),
@@ -39,7 +42,7 @@ class HeaderWidget extends StatelessWidget {
           ),
           Image.asset(
             'assets/avatar_profile.png',
-            height: 50,
+            height: 6.23 * SizeConfig.heightMultiplier,
           ),
         ],
       ),
